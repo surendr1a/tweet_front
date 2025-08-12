@@ -24,7 +24,7 @@ const TweetToImage = () => {
 
     try {
       console.log("📤 Sending request to backend with URL:", tweetUrl);
-      const res = await fetch("http://localhost:5000/generate", {
+      const res = await fetch("https://tweet-back.onrender.com/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ tweetUrl })
